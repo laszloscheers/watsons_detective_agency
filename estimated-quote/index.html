@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta 
+		name="description"
+		content="Quote calculator to get a final price
+				about all our services offered, with an
+				embedded printer to allow our customers 
+				to keep the final quote with them.">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watson's Detective Agency - Get a Quote</title>
+	<link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+	
+    <!-- Link to bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Link to icons for Font Awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">	
+	<!--Link to Osano privacy pop-up-->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <!-- Link to local scripts -->
+    <link rel="stylesheet" href="../assets/css/style.css">  
+    <script src="../assets/js/script.js"></script>  
+
+</head>
+<body>
+    
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/img/website-logo.webp" alt="website logo" width="200" height="40"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link"  aria-label="Go to home" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  aria-label="Go to about" href="../about/index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../services/index.html" aria-label="Go to services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../fees/index.html" aria-label="Go to fees">Fees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Get a quote</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact/index.html" aria-label="Go to contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+	
+	<!-- Begin container for contact form -->
+        
+     <div class="container-contact-form quote" id="quote" data-aos="zoom-in-down" data-aos-duration="700">
+        <section class="hero">
+			<div class="container-hero-cv text-center">
+				<h1>Get a Quote</h1>
+			</div>
+		</section>
+        
+        <!-- Contact form starts here -->
+        <div id="contact-form" accept-charset="utf-8">
+
+        <!-- CALCULATOR -->
+		
+        <div id="canvas" class="container group">
+    
+            <div id="primaryContent" class="group">
+        
+            <form class="cart" id="cart_custom">
+                <fieldset id="product-summary">
+                    <h2>Choose your desired services:</h2>
+                    
+                    <!--TRACING-->
+                    
+                    <div class="row-quote">
+                        <div class="group col3 state">
+                            <label for="state">Tracing Job:</label>
+
+                        </div>
+        
+                        <div class="group col3 method">
+        
+                            <label class="options">Select a fee:</label>
+                            <select id="tracing" name="tracing">
+                                <option value="0" selected="selected"></option>
+                                <option value="500">500€/day (24 hours)</option>
+                                <option value="2800">2800€/week (7 days)</option>
+                                <option value="8400">8400€/month (30 days)</option>
+                            </select>
+        
+                        </div>
+                        
+                        <div class="order" id="value1">
+                                <label for="tracing-q" id="quantity-1" class="fee">Quantity:</label>
+                                <input type="number" name="tracing-qs" id="tracing-q" min="0" placeholder="0" value="0" size="3" >
+                        </div>
+                                          
+                    </div>
+                    
+                    <!--EAVESDROPPING-->
+                    
+                    <div class="row-quote">
+                        <div class="group col3 state">
+                            <label for="state">Eavesdropping:</label>
+                        </div>
+        
+                        <div class="group col3 method">
+        
+                            <label class="options">Select a fee:</label>
+                            <select id="eavesdropping" name="eavesdropping">
+                                <option value="0" selected="selected"></option>
+                                <option value="80">80€ (1 hour)</option>
+                                <option value="300">300€ (5 hour)</option>
+                            </select>
+                            
+                        </div>
+                        
+                        <div class="order" id="value2">
+                                <label for="eavesdropping-q" id="quantity-2" class="fee">Quantity: </label>
+                                <input type="number" name="eavesdropping-q" id="eavesdropping-q" min="0" placeholder="0" value="0" size="3" >
+                        </div>
+                    
+                    </div>
+                    
+                    <!--LEGAL ADVICE-->
+                    
+                    <div class="row-quote">
+                        <div class="group col3 state">
+                            <label for="state">Solicitors & Lawyers:</label>
+                        </div>
+        
+                        <div class="group col3 method">
+        
+                            <label class="fee">150€ (1 hour)</label>
+        
+                        </div>
+                        
+                        <div class="order">
+                                <label for="legal-advice-q" class="fee">Hour/s:</label>
+                                <input type="number" name="legal-advice-q" id="legal-advice-q" min="0" placeholder="0" value="0" size="3" >
+                        </div>
+            
+                    </div>
+                    
+                    <!--Hacking Solutions-->
+                    
+                    <div class="row-quote">
+                        <div class="group col3 state">
+                            <label for="state">Hacking Solutions:</label>
+                        </div>
+        
+                        <div class="group col3 method">
+        
+                            <label class="fee">500€ (1 hour)</label>
+                            
+                        </div>
+                        
+                        <div class="order">
+                                <label for="hacking-q" class="fee">Hour/s:</label>
+                                <input type="number" name="hacking-q" id="hacking-q" min="0" placeholder="0" value="0" size="3" >
+                        </div>
+                        
+                    </div>
+
+                </fieldset>
+
+                <div class="row-quote grid">
+                    <div id="submit-div" class="item-btn justify">
+                        <button class="btn-about" id="submit" value="Estimate Total" type="submit" onclick="estimateTotal(event)">Calculate <i class="fas fa-arrow-circle-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="group col2 calc" id="print">
+                    <div id="results" class="results">
+
+                    </div>
+                </div>
+                <div class="row-quote grid">
+                    <div class="item-btn justify">
+                        <a class="btn-about" id="print-btn" type="button" onclick="printDiv('print')" style="visibility: hidden" href="#results">Print Quote <i class="fas fa-arrow-circle-right"></i></a> 
+                    </div>
+                </div>
+            </form>
+            </div>
+            
+        </div>
+
+
+        <!-- End contact calculator fields -->
+
+    </div>
+        <!-- Contact form ends here -->
+
+    </div>
+    <!-- End container for contact form -->
+	
+	
+	
+	<!-- Footer -->
+	<footer class="container-footer" id="footer">
+		<div class="item-3">
+
+			<h4>Site Map</h4>
+            <p><i class="fas fa-arrow-up"></i><a href="#">Top</a></p>
+			<p><i class="fas fa-home"></i><a href="../index.html">Home</a></p>
+            <p><i class="fas fa-file-alt fa-fw"></i><a href="../about/index.html">About</a></p>
+            <p><i class="fas fa-file-alt fa-fw"></i><a href="../services/index.html">Services</a></p>
+            <p><i class="fas fa-file-alt fa-fw"></i><a href="../fees/index.html">Fees</a></p>
+            <p><i class="fas fa-file-alt fa-fw"></i><a href="../contact/index.html">Contact</a></p>
+		
+		</div>
+		<div class="item-3">
+			<h4>Watson's Detective Agency</h4>
+			<p>Something troubling you? Trust the world's second leading detective to sort it out</p>
+		</div>
+		<div class="item-3">
+			<h4>Contact</h4>
+			<p><i class="fas fa-envelope fa-fw"></i><a href="mailto:watsonsdetectiveagency@gmail.com"> Email</a></p>
+            <p><i class="fas fa-phone-square-alt fa-fw"></i><a href="tel:01899597648"> Phone Number: 01899597648</a></p>
+			<p><i class="fab fa-github-square fa-fw"></i><a href="https://github.com/laszloluque/Watson-s" target="_blank"> GitHub Project</a></p>
+			<p><i class="fab fa-linkedin fa-fw"></i><a href="https://www.linkedin.com/in/dr.watson/" target="_blank"> Linkedin</a></p>
+            <p><i class="fas fa-user-shield fa-fw"></i><a href="../privacy.html"> Privacy</a>
+		</div>
+		
+	</footer>
+
+	<!--Script for pop-up message from Osano-->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#252e39"
+        },
+        "button": {
+          "background": "#14a7d0"
+        }
+      },
+      "theme": "classic",
+      "position": "bottom-right",
+      "content": {
+        "href": "../privacy.html"
+      }
+    });
+	
+	    function calculate(){
+                var field1=document.getElementById("num1").value;
+                var field2=document.getElementById("num2").value;
+
+                var result=parseFloat(field1)+parseFloat(field2);
+
+                if(!isNaN(result)){
+
+                    document.getElementById("answer").innerHTML="The answer is " + result;
+                }
+            }
+    </script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8B1C21TP39"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-8B1C21TP39');
+	</script>
+	<!-- JavaScript CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<!-- Link to JS scripts -->
+	<script src="../assets/js/script.js"></script>
+</body>
+</html>

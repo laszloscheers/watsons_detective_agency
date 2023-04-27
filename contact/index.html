@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta 
+		name="description"
+		content="Contact form where our clients can get
+				in touch with us for questions, contracts,
+				new investigations and quotes">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watson's Detective - Contact</title>
+	<link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+	
+    <!-- Link to bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />    
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Link to icons for Font Awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Link to stylesheet for AOS animate on scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	<!--Link to Osano privacy pop-up-->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <!-- Link to local scripts -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+	<!-- JavaScript AOS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/img/website-logo.webp" alt="website logo" width="200" height="40"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-label="Go to contact" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  aria-label="Go to about" href="../about/index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../services/index.html" aria-label="Go to services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../fees/index.html" aria-label="Go to fees">Fees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../estimated-quote/index.html" aria-label="Go to get a quote">Get a quote</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Begin container for contact form -->
+        
+     <div class="container-contact-form" data-aos="zoom-in-down" data-aos-duration="700">
+        <h3>Contact us</h3>
+        <p>To contact Mr Watson <span class="color">STOP</span> Send an encrypted telegram <span class="color">STOP</span> With your details <span class="color">STOP</span> And we will contact you <span class="color">STOP</span> Or you can just fill in the form below <span class="color">STOP</span>.</p>
+        
+        <!-- Contact form starts here -->
+        <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/f/mayvyojj">
+
+            <!-- Begin contact form fields -->
+
+            <div class="flex-row">
+                <div class="item-name">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="Your First and Last Name here." required>
+                </div>
+                <div class="item-email">
+                    <label for="email-address">Email</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="Your Email Address here." required>
+                </div>
+            </div>
+
+            <div class="flex-row">
+                <div class="item-email">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Your Phone Number here." required>
+                </div>
+            </div>
+            
+            <div class="flex-row">
+                <div class="item-textarea">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Your Message here." required></textarea>
+                </div>
+
+                <div class="item-btn">
+                    <button id="btn-submit" type="submit">Send <i class="fas fa-arrow-circle-right"></i></button> 
+                </div>
+            </div>
+
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            <!-- End contact form fields -->
+
+        </form>
+        <!-- Contact form ends here -->
+
+    </div>
+    <!-- End container for contact form -->
+    <hr>
+    <!--Contact info section-->
+    <section>
+        <div class="container-flexbox container-header-section-two-columns">
+            <div class="item-2">
+                <h1>Contact details</h1>
+                <p>Phone Number: <a href="tel:01899597648">01899597648</a></p>
+                <p>Email: <a href="mailto:watsonsdetectiveagency@gmail.com" target="_blank">watsonsdetectiveagency@gmail.com</a></p>
+                <p>Address:<br><br><span id="address">Farmleigh House & Estate<br>White's Rd, Phoenix Park, Dublin 15, D15 TD50</span></p>
+                <div class="CTA-anchor">
+                    <br>
+                    <a class="CTA-contact" href="#" onclick="CopyToClipboard('address');return false;">Copy address to clipboard <i class="far fa-copy"></i></a>
+                </div>
+                
+            </div>
+            <div class="item-2">
+                <h1 class="margin-left">Google Maps</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19046.195296713744!2d-6.377295255660976!3d53.3651920758134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670d3da5055555%3A0xfe998152b0e8ccb3!2sFarmleigh%20House%20%26%20Estate!5e0!3m2!1sen!2sie!4v1639182191017!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="container-flexbox item-1 centered scale-up-center">
+            </div>
+        </div>
+    </section>
+
+	<!-- Footer -->
+	<footer class="container-footer" id="footer">
+		<div class="item-3">
+
+			<h4>Site Map</h4>
+            <p><i class="fas fa-arrow-up"></i><a href="#">Top</a></p>
+			<p><i class="fas fa-home"></i><a href="../index.html">Home</a></p>
+            <p><i class="fas fa-file-alt fa-fw"></i><a href="../about/index.html">About</a></p>
+            <p><i class="fas fa-file-alt fa-fw"></i><a href="../services/index.html">Services</a></p>
+            <p><i class="fas fa-file-alt fa-fw"></i><a href="../fees/index.html">Fees</a></p>
+            <p><i class="fas fa-file-alt fa-fw"></i><a href="../estimated-quote/index.html">Get a quote</a></p>
+		
+		</div>
+		<div class="item-3">
+			<h4>Watson's Detective Agency</h4>
+			<p>Something troubling you? Trust the world's second leading detective to sort it out</p>
+		</div>
+		<div class="item-3">
+			<h4>Contact</h4>
+			<p><i class="fas fa-envelope fa-fw"></i><a href="mailto:watsonsdetectiveagency@gmail.com"> Email</a></p>
+            <p><i class="fas fa-phone-square-alt fa-fw"></i><a href="tel:01899597648"> Phone Number: 01899597648</a></p>
+			<p><i class="fab fa-github-square fa-fw"></i><a href="https://github.com/laszloluque/Watson-s" target="_blank"> GitHub Project</a></p>
+			<p><i class="fab fa-linkedin fa-fw"></i><a href="https://www.linkedin.com/in/dr.watson/" target="_blank"> Linkedin</a></p>
+            <p><i class="fas fa-user-shield fa-fw"></i><a href="../privacy.html"> Privacy</a>
+		</div>
+	</footer>
+
+    <!-- Begin JavaScript code for AOS animate on scroll library -->
+    <script>
+        AOS.init({
+        disable: function() {
+        var maxWidth = 977;
+        return window.innerWidth < maxWidth;
+        }
+        });
+
+    </script>	
+	<!--Script for pop-up message from Osano-->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#252e39"
+        },
+        "button": {
+          "background": "#14a7d0"
+        }
+      },
+      "theme": "classic",
+      "position": "bottom-right",
+      "content": {
+        "href": "../privacy.html"
+      }
+    });
+    </script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8B1C21TP39"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-8B1C21TP39');
+	</script>
+	<!-- JavaScript CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<!-- Link to local scripts -->
+	<script src="../assets/js/script.js"></script>
+</body>
+</html>
+
