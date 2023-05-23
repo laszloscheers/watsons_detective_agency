@@ -788,9 +788,6 @@ li.cross::after {
     .container-flexbox .item-3 {
         width: 80%;
     }
-    .container-flexbox .item-3 {
-        margin-bottom: 14%;
-    }
     .container-flexbox .item-3,
     .dark-bg {
         display: grid;
@@ -907,11 +904,9 @@ li.cross::after {
     .container-flexbox.container-header-section-two-columns .item-2 h1 {
         font-size: calc(45px + (60 - 45) * ((100vw - 320px) / (1600 - 320)));
     }
-    .fisrst{
-        order:1;
-    }
-    .second{
-        order:2;
+
+    .container-flexbox, .container-header-section-two-columns{
+        margin-top: 0 !important;
     }
 }
 @media all and (max-width: 538px) {
